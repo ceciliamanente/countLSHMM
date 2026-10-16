@@ -1,6 +1,6 @@
 # countLSHMM
 
-This repository contains the code for the latent space hidden Markov model (LS-HMM) for multiplex longitudinal count networks used in Chapter 4 of the thesis (Manente, C.).
+This repository contains the code for *A latent space hidden Markov model for clustering views in longitudinal multilayer networks* (Manente, C., Alfò, M., and D'Angelo, S.).
 
 ## The model
 
@@ -35,17 +35,6 @@ install.packages(c("Rcpp", "RcppArmadillo", "mclust", "posterior"))
 ```
 
 The samplers are compiled at run time with `Rcpp::sourceCpp()`.
-
-## Usage
-
-From the repository root:
-
-```sh
-Rscript R/run_base.R
-Rscript R/run_sr.R
-```
-
-As provided, each script simulates a small data set and runs in a few minutes. To use your own data, replace the data section at the top of the script, as described in its header comments. The data must be two lists of K arrays, each n x n x T: one with the counts and one with the indicators of observed dyads.
 
 ## Data availability
 
